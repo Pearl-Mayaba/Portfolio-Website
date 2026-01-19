@@ -40,8 +40,9 @@
     </p>
   </section>
 
-  
   <section id="skills">
+  <div class="skills-container">
+  
   <h2>Skills</h2>
 
   <div>
@@ -63,7 +64,8 @@
     <img src="images/github.png" alt="GitHub logo" width="60">
     <p>GitHub</p>
   </div>
-</section>
+ </div>
+ </section>
 
 
   
@@ -85,11 +87,19 @@
 
   <article>
     <h3>Weather App</h3>
+    <div>
+    <img src="images/weather.jfif" alt="My-Weather-Forecast" width="60">
+  </div>
     <p>
       A weather application that fetches real-time weather data using a public
       API and displays current conditions based on user search.
     </p>
     <p><strong>Technologies:</strong> HTML, CSS, JavaScript, API</p>
+    
+    <a href="https://github.com/Pearl-Mayaba/My-Weather-Forecast" target="_blank">
+    GitHub
+    </a>
+    <br>
 
     <a href="https://my-weather-forecast-delta.vercel.app/" target="_blank">
   Live Demo
@@ -102,46 +112,43 @@
 
   
   <section id="contact">
-  <h2>Contact</h2>
+  <h2>Contact Me</h2>
 
-  <p><a href="mailto:pearlymayaba10@gmail.com"><img src="images/email.png" alt="Email icon" width="60">
+  <div class="contact-icons">
+    <a href="mailto:pearlymayaba10@gmail.com">
+      <img src="images/email.png" alt="Send me an email" width="50">
     </a>
-  </p>
 
-  <p> 
-    <a href="https://www.linkedin.com/in/pearl-mayaba-0b3079246/" target="_blank"><img src="images/linkedin.png" alt="Linkedin icon" width="60">
+    <a href="https://www.linkedin.com/in/pearl-mayaba-0b3079246/" target="_blank">
+      <img src="images/linkedin.png" alt="My LinkedIn profile" width="50">
     </a>
-  </p>
 
-  <p>
-    <a href="https://github.com/Pearl-Mayaba" target="_blank"><img src="images/github.png" alt="Github icon" width="60"> 
+    <a href="https://github.com/Pearl-Mayaba" target="_blank">
+      <img src="images/github.png" alt="My GitHub profile" width="50">
     </a>
-  </p>
 
-  <p>
-    <a href="tel:0721384690"><img src="images/phone.png" alt="Phone icon" width="60"> 
+    <a href="tel:0721384690">
+      <img src="images/phone.png" alt="Call me" width="50">
     </a>
-  </p>
-</section>
-<section id="get-in-touch">
-  <h2>Get in Touch</h2>
+  </div>
 
-  <form>
-    <label for="name">Name</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+  <form class="contact-form">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
 
-    <label for="surname">Surname</label><br>
-    <input type="text" id="surname" name="surname" required><br><br>
+    <label for="surname">Surname</label>
+    <input type="text" id="surname" name="surname" required>
 
-    <label for="email">Email</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
 
-    <label for="message">Message</label><br>
-    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
 
     <button type="submit">Send Message</button>
   </form>
 </section>
+
   </main>
 
 
