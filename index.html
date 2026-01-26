@@ -9,149 +9,141 @@
 <body>
 
   
-  <header>
-    <h1>Pearl Mayaba</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+  <header class="site-header">
+    <nav class="nav">
+      
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#" onclick="showSection('about')">About</a>
+        <a href="#" onclick="showSection('skills')">Skills</a>
+        <!-- <a href="#projects">Projects</a> -->
+        <a href="#" onclick="showSection('contact')">Contact</a>
+
+      </div>
     </nav>
   </header>
 
-  
   <main>
-  <section id="home" class="hero">
-    <h2>Hi, I’m Pearl Mayaba</h2>
-    <p>Aspiring Software Developer & Mechanical Engineering Graduate</p>
+
     
-    <a href="Pearl-Resume.pdf" download>Download CV</a>
-
-  </section>
-
-  
-  <section id="about">
-    <h2>About Me</h2>
+    <section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Hi There,</h1>
+    <h2>I’m <span>Pearl Mayaba</span></h2>
     <p>
-      I am a motivated learner with a background in Mechanical Engineering (N5),
-      currently transitioning into software development through self-study and
-      the SheCodes program. I enjoy building practical and creative solutions.
+      Aspiring Software Developer <br>
+      Mechanical Engineering Graduate
     </p>
-  </section>
 
-  <section id="skills">
-  <div class="skills-container">
-  
-  <h2>Skills</h2>
+    <div class="hero-buttons">
+      <a href="#" class="btn primary" onclick="showSection('projects')">
+  View Projects
+</a>
 
-  <div>
-    <img src="images/html.png" alt="HTML logo" width="60">
-    <p>HTML</p>
+      <a href="Pearl-Resume.pdf" download class="btn secondary">
+        Download CV
+      </a>
+      
+
+    </div>
   </div>
+</section>
 
-  <div>
-    <img src="images/css.png" alt="CSS logo" width="60">
-    <p>CSS</p>
-  </div>
-
-  <div>
-    <img src="images/javascript.png" alt="JavaScript logo" width="60">
-    <p>JavaScript</p>
-  </div>
-
-  <div>
-    <img src="images/github.png" alt="GitHub logo" width="60">
-    <p>GitHub</p>
-  </div>
- </div>
+<section id="about" class="toggle-section">
+ <h2>About Me</h2> 
+ <p> I am a motivated learner with a background in Mechanical Engineering, currently transitioning into Software Development through self-study, IT Varsity (FNB App Academy) and the SheCodes program. I enjoy building practical and creative solutions. </p>
  </section>
 
 
   
-  <section id="projects">
-  <h2>Projects</h2>
+    <section id="skills" class="toggle-section">
 
-  <!-- <article>
-    <h3>Portfolio Website</h3>
-    <p>
-      A personal portfolio website built using HTML, CSS, and JavaScript to
-      showcase my skills, projects, and contact information.
-    </p>
-    <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+      <h2 class="section-title">Skills</h2>
 
-    <a href="https://github.com/Pearl-Mayaba" target="_blank">
-      View on GitHub
-    </a>
-  </article> -->
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img src="images/html.png" alt="HTML">
+          <p>HTML</p>
+        </div>
 
-  <article>
-    <h3>Weather App</h3>
-    <div>
-    <img src="images/weather.jfif" alt="My-Weather-Forecast" width="60">
-  </div>
-    <p>
-      A weather application that fetches real-time weather data using a public
-      API and displays current conditions based on user search.
-    </p>
-    <p><strong>Technologies:</strong> HTML, CSS, JavaScript, API</p>
+        <div class="skill-card">
+          <img src="images/css.png" alt="CSS">
+          <p>CSS</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="images/javascript.png" alt="JavaScript">
+          <p>JavaScript</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="images/github.png" alt="GitHub">
+          <p>GitHub</p>
+        </div>
+      </div>
+    </section>
+
     
-    <a href="https://github.com/Pearl-Mayaba/My-Weather-Forecast" target="_blank">
-    GitHub
-    </a>
-    <br>
+  <section id="projects" class="toggle-section">
 
-    <a href="https://my-weather-forecast-delta.vercel.app/" target="_blank">
-  Live Demo
-</a>
+  <h2 class="section-title">My Projects</h2>
 
+  <article class="project-card weather-project">
+    <div class="project-overlay">
+      <h3>Weather App</h3>
+      <p>
+        A weather application that fetches real-time weather data
+        using a public API.
+      </p>
+
+      <div class="project-links">
+        <a href="https://github.com/Pearl-Mayaba/My-Weather-Forecast" target="_blank">
+          GitHub
+        </a>
+        <a href="https://my-weather-forecast-delta.vercel.app/" target="_blank">
+          Live Demo
+        </a>
+      </div>
+    </div>
   </article>
 
 </section>
 
 
-  
-  <section id="contact">
-  <h2>Contact Me</h2>
 
-  <div class="contact-icons">
-    <a href="mailto:pearlymayaba10@gmail.com">
-      <img src="images/email.png" alt="Send me an email" width="50">
-    </a>
+    
+    <section id="contact" class="toggle-section">
 
-    <a href="https://www.linkedin.com/in/pearl-mayaba-0b3079246/" target="_blank">
-      <img src="images/linkedin.png" alt="My LinkedIn profile" width="50">
-    </a>
+      <h2 class="section-title">Get In Touch</h2>
 
-    <a href="https://github.com/Pearl-Mayaba" target="_blank">
-      <img src="images/github.png" alt="My GitHub profile" width="50">
-    </a>
+      <div class="contact-icons">
+        <a href="mailto:pearlymayaba10@gmail.com">
+          <img src="images/email.png" alt="Email">
+        </a>
 
-    <a href="tel:0721384690">
-      <img src="images/phone.png" alt="Call me" width="50">
-    </a>
-  </div>
+        <a href="https://www.linkedin.com/in/pearl-mayaba-0b3079246/" target="_blank">
+          <img src="images/linkedin.png" alt="LinkedIn">
+        </a>
 
-  <form class="contact-form">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required>
+        <a href="https://github.com/Pearl-Mayaba" target="_blank">
+          <img src="images/github.png" alt="GitHub">
+        </a>
 
-    <label for="surname">Surname</label>
-    <input type="text" id="surname" name="surname" required>
+        <a href="tel:0721384690">
+          <img src="images/phone.png" alt="Phone">
+        </a>
+      </div>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
-
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+      <form class="contact-form">
+        <input type="text" placeholder="Name" required>
+        <input type="text" placeholder="Surname" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Your message..." rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
 
   </main>
-
-
 
   <script src="script.js"></script>
 </body>
