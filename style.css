@@ -77,6 +77,25 @@ nav a:hover {
   margin-top: 40px;
 }
 
+.hero-socials {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+
+.hero-socials a {
+  font-size: 1.8rem;
+  color: #00bcd4;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hero-socials a:hover {
+  transform: translateY(-6px);
+  color: white;
+}
+
+
 
 .btn {
   display: inline-block;
@@ -177,6 +196,7 @@ nav a:hover {
 
 .contact-icons img {
   transition: transform 0.3s;
+  width: 35px;
 }
 
 .contact-icons img:hover {
