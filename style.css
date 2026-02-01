@@ -217,7 +217,7 @@ body {
   position: relative;
   width: 260px;
   height: 220px;
-  margin: 40px auto;
+  /* margin: 40px auto; */
 }
 
 .cloud {
@@ -253,16 +253,88 @@ body {
   position: absolute;
   top: 110px;
   left: 50%;
+  width: 120px;
   transform: translateX(-50%);
 }
 
 .rain span {
   position: absolute;
   width: 4px;
-  height: 20px;
+  height: 18px;
   background: #00bcd4;
   border-radius: 10px;
   animation: rain-fall 1s linear infinite;
+}
+.rain span:nth-child(1) {
+  left: 0px;
+  animation-delay: 0s;
+}
+.rain span:nth-child(2) {
+  left: 20px;
+  animation-delay: 0.2s;
+}
+.rain span:nth-child(3) {
+  left: 40px;
+  animation-delay: 0.4s;
+}
+.rain span:nth-child(4) {
+  left: 60px;
+  animation-delay: 0.1s;
+}
+.rain span:nth-child(5) {
+  left: 80px;
+  animation-delay: 0.3s;
+}
+.rain span:nth-child(6) {
+  left: 100px;
+  animation-delay: 0.5s;
+}
+
+.poem-effect {
+  position: relative;
+  height: 120px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.poem-effect span {
+  position: absolute;
+  bottom: 0;
+  font-size: 1.2rem;
+  color: #ffb6ff;
+  animation: floatWords 6s linear infinite;
+  opacity: 0;
+}
+
+.poem-effect span:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+}
+.poem-effect span:nth-child(2) {
+  left: 35%;
+  animation-delay: 1.5s;
+}
+.poem-effect span:nth-child(3) {
+  left: 60%;
+  animation-delay: 3s;
+}
+.poem-effect span:nth-child(4) {
+  left: 80%;
+  animation-delay: 4.5s;
+}
+
+@keyframes floatWords {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120px);
+    opacity: 0;
+  }
 }
 
 @keyframes rain-fall {
@@ -338,4 +410,24 @@ body {
 .skills-column .skills-grid {
   flex-direction: column;
   gap: 15px;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 188, 212, 0.25);
 }
