@@ -435,15 +435,23 @@ body {
 }
 @media (max-width: 768px) {
   body {
-    overflow: auto; /* allow scrolling */
+    overflow: auto;
   }
 
   .section-page {
-    position: relative;
-    min-height: auto;
-    opacity: 1;
-    transform: none;
-    padding: 80px 20px;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 120px 20px 80px;
+
+    opacity: 0;
+    transform: translateY(60px);
+    transition:
+      opacity 0.7s ease,
+      transform 0.7s ease;
   }
 
   .section-page:not(.active) {
