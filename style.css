@@ -141,6 +141,7 @@ body {
 .content-box h2 {
   font-size: 3rem;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .content-box h2 span {
