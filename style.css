@@ -494,3 +494,39 @@ body {
     transform: scale(0.85);
   }
 }
+.skills-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.skills-group {
+  flex: 1;
+  min-width: 220px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.skills-group:hover {
+  transform: translateY(-6px);
+}
+
+.skills-group h3 {
+  margin-bottom: 15px;
+  color: #00bcd4;
+}
+
+.skills-group ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-group li {
+  margin: 10px 0;
+  font-weight: 500;
+}
