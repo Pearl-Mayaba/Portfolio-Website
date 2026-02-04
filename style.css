@@ -433,3 +433,64 @@ body {
   transform: translateY(-8px);
   box-shadow: 0 15px 30px rgba(0, 188, 212, 0.25);
 }
+@media (max-width: 768px) {
+  body {
+    overflow: auto; /* allow scrolling */
+  }
+
+  .section-page {
+    position: relative;
+    min-height: auto;
+    opacity: 1;
+    transform: none;
+    padding: 80px 20px;
+  }
+
+  .section-page:not(.active) {
+    opacity: 1;
+    transform: none;
+  }
+
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 120px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .skills-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    margin: 20px 0;
+  }
+
+  .weather-css {
+    transform: scale(0.85);
+  }
+}
