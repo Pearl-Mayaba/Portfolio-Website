@@ -18,15 +18,14 @@
 
   
   <header class="site-header">
-    <nav class="nav">
-      <div class="nav-links">
-        <a href="#" onclick="showSection('home')">Home</a>
-        <a href="#" onclick="showSection('about')">About</a>
-        <a href="#" onclick="showSection('skills')">Skills</a>
-        <a href="#" onclick="showSection('projects')">Projects</a>
-        <a href="#" onclick="showSection('contact')">Contact</a>
-      </div>
-    </nav>
+    <div class="nav-links">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</div>
+
   </header>
 
   <main>
@@ -44,7 +43,8 @@
         </p>
 
         <div class="hero-buttons">
-          <a href="#" class="btn primary" onclick="showSection('projects')">
+          <a href="#projects" class="btn primary">
+
             View Projects
           </a>
           <a href="Pearl-Resume.pdf" download class="btn secondary">
@@ -86,7 +86,7 @@
 
     <div class="skills-columns">
 
-      <div class="skills-group">
+      <div class="skills-column">
         <h3>💻 Programming</h3>
         <ul>
           <li>HTML</li>
@@ -95,7 +95,7 @@
         </ul>
       </div>
 
-      <div class="skills-group">
+      <div class="skills-column">
         <h3>⚙️ Mechanical</h3>
         <ul>
           <li>Attention to Detail</li>
@@ -104,7 +104,7 @@
         </ul>
       </div>
 
-      <div class="skills-group">
+      <div class="skills-column">
         <h3>🌟 General</h3>
         <ul>
           <li>Microsoft Office</li>
@@ -117,74 +117,62 @@
   </div>
 </section>
 
-    
-  <section class="section-page projects" id="projects">
+   <section class="section-page projects" id="projects">
+  <div class="content-box">
 
-      
-      <div class="content-box">
-        
-    
+    <h2>My <span>Projects</span></h2>
+
     <div class="projects-grid">
 
-    
-    <div class="project-card">
-      <h3>Weather App Project</h3>
-      <div class="weather-css">
-        <div class="sun"></div>
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>Weather App Project</h3>
 
-  <div class="cloud"></div>
+        <div class="weather-css">
+          <div class="sun"></div>
+          <div class="cloud"></div>
+          <div class="rain">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+          </div>
+        </div>
 
-  <div class="rain">
-    <span></span><span></span><span></span>
-    <span></span><span></span><span></span>
-    <span></span><span></span><span></span>
-    <span></span><span></span><span></span>
-  </div>
-</div>
-
-      
-      <p>
-        A responsive weather application that displays real-time weather
-          conditions using a public API. Users can search for cities and
-          view temperature, weather status, and location-based data.
+        <p>
+          A responsive weather application that displays real-time weather conditions using a public API. Users can search for cities and view temperature, weather status, and location-based data.
         </p>
-      </p>
-      <div class="project-links">
-        <a href="https://github.com/Pearl-Mayaba/My-Weather-Forecast" target="_blank">GitHub</a>
-        <a href="https://my-weather-forecast-delta.vercel.app/" target="_blank">Live Demo</a>
-      </div>
-    </div>
 
-    
-    <div class="project-card">
-      <h3>AI Poems Project</h3>
-      <div class="poem-effect">
+        <div class="project-links">
+          <a href="https://github.com/Pearl-Mayaba/My-Weather-Forecast" target="_blank">GitHub</a>
+          <a href="https://my-weather-forecast-delta.vercel.app/" target="_blank">Live Demo</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <h3>AI Poems Project</h3>
+
+        <div class="poem-effect">
   <span>dream</span>
   <span>love</span>
   <span>hope</span>
   <span>moon</span>
 </div>
 
-
-
-
         <p>
-  An AI-powered poetry generator that creates unique poetic verses
-  based on user prompts. Built with HTML, CSS, JavaScript, and AI APIs
-  showcasing creative coding and integration of machine intelligence.
-</p>
+          dream love hope moon
+An AI-powered poetry generator that creates unique poetic verses based on user prompts. Built with HTML, CSS, JavaScript, and AI APIs showcasing creative coding and integration of machine intelligence.
+        </p>
 
-      </p>
-      <div class="project-links">
-        <a href="https://github.com/Pearl-Mayaba/AI-Poems-Project" target="_blank">GitHub</a>
-        <a href="https://ai-poems-project-five.vercel.app/" target="_blank">Live Demo</a>
+        <div class="project-links">
+          <a href="https://github.com/Pearl-Mayaba/AI-Poems-Project" target="_blank">GitHub</a>
+          <a href="https://ai-poems-project-five.vercel.app/" target="_blank">Live Demo</a>
+        </div>
       </div>
+
     </div>
-
   </div>
-</div>
-      </div>
-    </section>
+</section>
+
     
     <section id="contact" class="section-page">
       <div class="content-box">
