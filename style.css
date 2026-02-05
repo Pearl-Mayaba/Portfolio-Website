@@ -189,6 +189,15 @@ body {
   border-radius: 12px;
   font-weight: bold;
 }
+.skills-column ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.skills-column li {
+  margin-bottom: 12px;
+}
 
 .projects-grid {
   display: grid;
@@ -348,6 +357,10 @@ body {
   .section-page {
     align-items: flex-start;
     padding: 25px 16px;
+  }
+  .section-page.projects {
+    overflow-y: auto;
+    align-items: flex-start;
   }
 
   .nav-links {
