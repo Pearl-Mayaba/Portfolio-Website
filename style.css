@@ -9,11 +9,9 @@ body {
   background: #0f2027;
   color: white;
   line-height: 1.6;
-  overflow-x: hidden; /* ✅ only block sideways scroll */
-  overflow-y: auto; /* ✅ allow vertical scroll */
+  overflow-x: hidden;
+  overflow-y: auto;
 }
-
-/* ================= HEADER ================= */
 
 .site-header {
   position: fixed;
@@ -43,31 +41,19 @@ body {
   padding-bottom: 5px;
 }
 
-/* ================= SECTIONS ================= */
-
 .section-page {
   min-height: 100vh;
-  padding: 120px 20px 80px; /* space for header + breathing room */
+  padding: 120px 20px 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-/* .section-page.active {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-  z-index: 2;
-} */
-
-/* ONLY PROJECTS CAN SCROLL */
 .section-page.projects {
   overflow-y: auto;
   align-items: flex-start;
 }
-
-/* ================= HERO ================= */
 
 .hero {
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
@@ -137,8 +123,6 @@ body {
   color: white;
 }
 
-/* ================= CONTENT ================= */
-
 .content-box {
   max-width: 900px;
   width: 100%;
@@ -157,8 +141,6 @@ body {
   font-weight: 300;
   margin-bottom: 20px;
 }
-
-/* ================= SKILLS ================= */
 
 .skills-columns {
   display: flex;
@@ -189,8 +171,6 @@ body {
 .skills-column li {
   margin-bottom: 12px;
 }
-
-/* ================= PROJECTS ================= */
 
 .projects-grid {
   display: grid;
@@ -267,8 +247,6 @@ body {
   }
 }
 
-/* ================= CONTACT ================= */
-
 .contact-form {
   max-width: 400px;
   margin: 30px auto 0;
@@ -293,8 +271,6 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
-
-/* ================= WEATHER ================= */
 
 .weather-css {
   position: relative;
@@ -388,8 +364,6 @@ body {
   box-shadow: 0 0 25px rgba(255, 235, 59, 0.7);
   animation: pulse 2s infinite;
 }
-
-/* ================= MOBILE ================= */
 
 @media (max-width: 768px) {
   .skills-columns {
